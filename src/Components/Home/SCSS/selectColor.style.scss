@@ -1,0 +1,14 @@
+select.select-color{
+    border: none;
+    width: 40%;
+    outline: none;
+    border-radius: 10px;
+    padding: 3px 3px 3px 8px;
+    option:hover{
+        background-color: #ccc;
+      }
+
+      &::-webkit-scrollbar{
+        width: 10px;
+      }
+}

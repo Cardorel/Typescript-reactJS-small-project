@@ -1,0 +1,115 @@
+:root {
+  --blue-color: rgb(207, 214, 230);
+  --darkgolden-color: darkgoldenrod;
+  --white-color: white;
+}
+
+
+
+.App-container {
+  width: 80%;
+  margin: 15px auto;
+  text-align: center;
+
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 15px;
+
+    &>* {
+      width: 100%;
+    }
+
+    .product-content {
+      width: 40%;
+      margin: 15px;
+      padding: 10px;
+      background-color: var(--blue-color);
+      border-radius: 15px;
+      position: relative;
+
+      .card-header {
+        display: flex;
+        gap: 1em;
+
+        &>* {
+          flex-basis: 100%;
+        }
+
+        .isNew {
+          background-color: var(--darkgolden-color);
+          max-height: 20px;
+          line-height: 20px;
+          padding: 5px;
+          margin: 0;
+          border-radius: 15px;
+          color: var(--white-color);
+          font-size: medium;
+        }
+
+        .icon-style {
+          width: 26px;
+          height: 26px;
+          background-color: var(--white-color);
+          -webkit-box-shadow: 5px 5px 15px 5px #686767;
+          box-shadow: 5px 5px 15px 5px #686767;
+          border-radius: 50%;
+        }
+
+        .image-card {
+          width: 100%;
+
+          .image-content {
+            -webkit-box-shadow: 5px 5px 15px 5px #686767;
+            box-shadow: 5px 5px 15px 5px #686767;
+            border-radius: 15px;
+            overflow: hidden;
+
+            img {
+              width: 150px;
+              height: 150px;
+              object-fit: cover;
+              border-radius: 5px;
+              transition: 3.356s ease-in-out;
+
+              &:hover {
+                transform: scale(2);
+                object-fit: cover;
+                border-radius: 5px;
+                transition: 3.356s ease-in-out;
+              }
+            }
+          }
+        }
+      }
+
+      .card-center {
+
+        .productDescription,
+        .card-footer {
+          text-align: left;
+        }
+      }
+
+      .card-footer {
+        text-align: left;
+
+        .card-color-price-content {
+          display: flex;
+          align-items: center;
+          gap: 1em;
+          height: 100px;
+
+          &>* {
+            width: 100%;
+          }
+
+          &>p {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
