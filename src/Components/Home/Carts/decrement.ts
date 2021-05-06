@@ -33,7 +33,7 @@ export const handleDecrement = (datas : dataType[] , newData : dataType[] , id :
     //get the new array 
     let newItems = newData.map((data) => {
         //check if the id is the same and be sure the quantity can't be less than 1
-      if (data.id == id && data.quantity > 1) {
+      if (data.id === id && data.quantity > 1) {
         return {
             //return all preview value
           ...data,

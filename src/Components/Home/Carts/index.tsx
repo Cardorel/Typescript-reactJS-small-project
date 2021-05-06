@@ -11,8 +11,6 @@ import { mouseOver } from "./mouseOver";
 
 function Products() {
   const [newData, setNewData] = useState(datas);
-  const [isUserBuy , setIsUserBuy] = useState(false);
-  let isClicked = false;
 
   const handleMouseOver = (index: number) => {
     var selectItems : NodeListOf<HTMLSelectElement> = document.querySelectorAll("select");
