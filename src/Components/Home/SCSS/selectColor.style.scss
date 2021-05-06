@@ -4,11 +4,18 @@ select.select-color{
     outline: none;
     border-radius: 10px;
     padding: 3px 3px 3px 8px;
+    -moz-appearance: none;
+    
     option:hover{
         background-color: #ccc;
       }
 
       &::-webkit-scrollbar{
+        width: 10px;
+      }
+
+      
+      &::-moz-scrollbar{
         width: 10px;
       }
 }
